@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colormildBlue">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image1"
+            />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Wake Up Cafe"
+            android:textStyle="italic|bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:background="@color/colorlightgreen"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/slogon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="Awaken your Senses"
+            android:layout_below="@id/heading"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="@color/colorlightyellow"/>
+
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="@string/slogan"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading2"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="right"
+            android:padding="7dp"
+            android:text="@string/types_of_coffee"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/canteen"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/image1"/>
+        <ImageView
+            android:id="@+id/coffee"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/types_of_coffee"
+            app:srcCompat="@drawable/coffee" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/image3"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:ems="14"
+            android:text="@string/contact_info" />
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/image3">
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="gravity"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colormixgreen2"
+                android:ems="10"
+                android:textStyle="italic|bold"
+                android:text="@string/times_of_operation"/>
+            <TextView
+                android:id="@+id/text4"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:background="@color/colormixgreen"
+                android:text="About Wake Up Cafe"/>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:background="@color/colormixgreen"
+                android:textStyle="italic"
+                android:text="@string/info"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
