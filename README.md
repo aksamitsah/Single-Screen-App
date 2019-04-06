@@ -3,7 +3,8 @@
 This is the of the First Project [Android Basics Nanodegree](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803) program offered by Udacity in collaaboratin with Google.
 ## Project Desctiptions: 
 <img src="/Screenshort/Screenshot1.png" width="363" height="564"><img src="/Screenshort/Screenshot2.png" width="363" height="564">
-Design and implement a simple app that displays information about a small business.
+
+- Design and implement a simple app that displays information about a small business.
 ## Learning outcomes:
 - Understand basic app structure.
 - Identify and apprecite the difference between different view types.
